@@ -5,8 +5,9 @@ metadata:
 spec:
   ports:
   - port: 80
+    nodePort: 30009
     targetPort: vproapp-port
     protocol: TCP
   selector:
     app: vproapp
-  type: LoadBalancer
+  type: NodePort
